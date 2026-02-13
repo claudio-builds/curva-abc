@@ -655,6 +655,28 @@ export default function Home() {
         </section>
       )}
 
+      {/* CTA Banner */}
+      <div className="max-w-xl mx-auto px-4 mt-12">
+        <div className="bg-white rounded-2xl shadow-lg border border-violet-100 p-8 text-center">
+          <p className="text-2xl mb-2">🤖</p>
+          <p className="text-slate-800 text-lg font-semibold mb-1">
+            Quer automatizar seu trabalho com IA?
+          </p>
+          <p className="text-slate-500 mb-4 text-sm max-w-md mx-auto">
+            Conheça o Kit Primeiro Agente — guia completo pra criar seu assistente de IA pessoal do zero.
+          </p>
+          <a
+            href="https://pay.kiwify.com.br/sCqZ6r1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-3 bg-gradient-to-r from-violet-600 to-purple-600 text-white font-semibold rounded-xl hover:opacity-90 transition-opacity"
+          >
+            Conhecer o Kit →
+          </a>
+          <p className="text-slate-300 text-xs mt-3">Ferramentas gratuitas por Claudio Tools</p>
+        </div>
+      </div>
+
       {/* Footer */}
       <footer className="text-center py-8 text-slate-400 text-sm border-t mt-12">
         <p>Desenvolvido com ❤️ para engenheiros e orçamentistas</p>
