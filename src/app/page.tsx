@@ -55,8 +55,8 @@ export default function Home() {
     quantidade: '',
     custoUnitario: '',
   });
-  const [limiteA, setLimiteA] = useState(50);
-  const [limiteB, setLimiteB] = useState(80);
+  const [limiteA, setLimiteA] = useState(80);
+  const [limiteB, setLimiteB] = useState(95);
   const [results, setResults] = useState<ABCItem[]>([]);
   const [totalValue, setTotalValue] = useState(0);
   const [fileName, setFileName] = useState('');
