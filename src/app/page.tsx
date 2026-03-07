@@ -655,25 +655,53 @@ export default function Home() {
         </section>
       )}
 
-      {/* CTA Banner */}
+      {/* Popify CTA */}
       <div className="max-w-xl mx-auto px-4 mt-12">
-        <div className="bg-white rounded-2xl shadow-lg border border-violet-100 p-8 text-center">
-          <p className="text-2xl mb-2">🤖</p>
-          <p className="text-slate-800 text-lg font-semibold mb-1">
-            Quer automatizar seu trabalho com IA?
-          </p>
-          <p className="text-slate-500 mb-4 text-sm max-w-md mx-auto">
-            Conheça o Kit Primeiro Agente — guia completo pra criar seu assistente de IA pessoal do zero.
-          </p>
+        <div className="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-2xl p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <span className="text-2xl">🚀</span>
+            <p className="text-slate-700 font-medium">Quer aumentar suas vendas?</p>
+          </div>
           <a
-            href="https://pay.kiwify.com.br/sCqZ6r1"
+            href="https://popify-app.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-6 py-3 bg-gradient-to-r from-violet-600 to-purple-600 text-white font-semibold rounded-xl hover:opacity-90 transition-opacity"
+            className="inline-block px-5 py-2.5 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-xl hover:opacity-90 transition-all text-sm whitespace-nowrap"
           >
-            Conhecer o Kit →
+            Conheça o Popify →
           </a>
-          <p className="text-slate-300 text-xs mt-3">Ferramentas gratuitas por Claudio Tools</p>
+        </div>
+      </div>
+
+      {/* Interlinks Footer */}
+      <div className="max-w-3xl mx-auto px-4 mt-12">
+        <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-8">
+          <h2 className="text-lg font-bold text-slate-700 mb-6 flex items-center gap-2">
+            🛠️ Mais Ferramentas Gratuitas
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {[
+              { name: "Calculadora MEI", desc: "Calcule seus impostos como MEI", url: "https://calculadora-mei-app.vercel.app", icon: "📊" },
+              { name: "Calculadora de Preços", desc: "Forme o preço ideal do seu produto", url: "https://calculadora-preco-ten.vercel.app", icon: "💰" },
+              { name: "Gerador de Recibos", desc: "Crie recibos profissionais grátis", url: "https://gerador-recibos-tau.vercel.app", icon: "🧾" },
+              { name: "Gerador de Contratos", desc: "Contratos prontos para usar", url: "https://gerador-contratos-nu.vercel.app", icon: "📄" },
+              { name: "Popify", desc: "Notificações de prova social para seu site", url: "https://popify-app.vercel.app", icon: "🔔" },
+            ].map((tool) => (
+              <a
+                key={tool.name}
+                href={tool.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-3 p-3 rounded-xl hover:bg-slate-50 border border-transparent hover:border-slate-200 transition-all group"
+              >
+                <span className="text-xl mt-0.5">{tool.icon}</span>
+                <div>
+                  <p className="font-semibold text-slate-700 group-hover:text-violet-600 transition-colors text-sm">{tool.name}</p>
+                  <p className="text-slate-400 text-xs mt-0.5">{tool.desc}</p>
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -681,6 +709,7 @@ export default function Home() {
       <footer className="text-center py-8 text-slate-400 text-sm border-t mt-12">
         <p>Desenvolvido com ❤️ para engenheiros e orçamentistas</p>
         <p className="mt-1">Curva ABC Online © {new Date().getFullYear()}</p>
+        <p className="text-slate-300 text-xs mt-2">Ferramentas gratuitas por Claudio Tools</p>
       </footer>
     </main>
   );
